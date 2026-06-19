@@ -15,9 +15,9 @@
   },
   "bin": "q01sdk.exe",
   "post_install": [
-    "$configDir = \"$env:USERPROFILE\.q01sdk\"",
+    "$configDir = \"$env:USERPROFILE\\.q01sdk\"",
     "New-Item -ItemType Directory -Path $configDir -Force | Out-Null",
-    "$envFile = \"$configDir\.env\"",
+    "$envFile = \"$configDir\\.env\"",
     "if (-not (Test-Path $envFile)) { Set-Content -Path $envFile -Value \"Host=https://app-int.q01.io`r`nEnv=int\" }"
   ]
 }
