@@ -5,11 +5,11 @@
   "license": "Proprietary",
   "architecture": {
     "64bit": {
-      "url": "https://app-int.q01.io/api/v4/q01sdk/download/?file=win\u0026version=1.0.57",
+      "url": "https://app-int.q01.io/api/v4/q01sdk/download/?file=win\u0026version=1.0.57#/q01sdk.zip",
       "hash": "8ba760598a449cccc9c9246bcd827c22f08dcfeaaeac189b9011af6eebad99f4"
     },
     "arm64": {
-      "url": "https://app-int.q01.io/api/v4/q01sdk/download/?file=winarm\u0026version=1.0.57",
+      "url": "https://app-int.q01.io/api/v4/q01sdk/download/?file=winarm\u0026version=1.0.57#/q01sdk.zip",
       "hash": "341a676133eddd4ff2d0f7bc3518b31e1379ed434e4ec7bbb1230aea6f02f071"
     }
   },
