@@ -1,19 +1,24 @@
 {
-  "version": "1.0.65",
+  "version": "1.0.66",
   "description": "Q01 Platform SDK CLI",
   "homepage": "https://app-int.q01.io",
   "license": "Proprietary",
   "architecture": {
     "64bit": {
-      "url": "https://app-int.q01.io/api/v4/q01sdk/download/?file=win\u0026version=1.0.65#/q01sdk.zip",
-      "hash": "1cf579ea866023c4ad3b080e6c473056502def7bebc58b39d0735bc66de6cbae"
+      "url": "https://app-int.q01.io/api/v4/q01sdk/download/?file=win\u0026version=1.0.66#/q01sdk.zip",
+      "hash": "f91de35211e7093636a6d2cca46f83ab0e79d2112d0ba7754b1847da310dde70"
     },
     "arm64": {
-      "url": "https://app-int.q01.io/api/v4/q01sdk/download/?file=winarm\u0026version=1.0.65#/q01sdk.zip",
-      "hash": "dc042dcc760944813d4273dd6d13057fdb56b98bf9ecb4b7b10e16c561fd22cf"
+      "url": "https://app-int.q01.io/api/v4/q01sdk/download/?file=winarm\u0026version=1.0.66#/q01sdk.zip",
+      "hash": "b318d1d099fb93f46197f496e1659188367ee16369302521cdf909e0c782be94"
     }
   },
-  "bin": "q01sdk.exe",
+  "bin": [
+    [
+      "q01sdk.exe",
+      "q01sdk-int"
+    ]
+  ],
   "post_install": [
     "$configDir = \"$env:USERPROFILE\\.q01sdk\"",
     "New-Item -ItemType Directory -Path $configDir -Force | Out-Null",
