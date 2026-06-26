@@ -6,23 +6,18 @@
   "architecture": {
     "64bit": {
       "url": "https://app-qa.q01.io/api/v4/q01sdk/download/?file=win\u0026version=1.0.67#/q01sdk.zip",
-      "hash": "\u003c!DOCTYPE html\u003e\n\u003chtml lang=\"en\"\u003e\n  \u003chead\u003e\n    \u003cmeta charset=\"utf-8\" /\u003e\n    \u003clink rel=\"icon\" href=\"/app/favicon.ico\" /\u003e\n    \u003cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /\u003e\n    \u003cmeta name=\"theme-color\" content=\"#000000\" /\u003e\n    \n    \u003ctitle\u003e\n      q01 Platform\n    \u003c/title\u003e\n    \u003cscript type=\"module\" crossorigin src=\"/app/assets/index-f23fe82f.js\"\u003e\u003c/script\u003e\n    \u003clink rel=\"stylesheet\" href=\"/app/assets/style-37efb64a.css\"\u003e\n  \u003c/head\u003e\n  \u003cbody\u003e\n    \u003cnoscript\u003eYou need to enable JavaScript to run this app.\u003c/noscript\u003e\n    \u003cdiv id=\"root\"\u003e\u003c/div\u003e\n    \n    \u003c!--\n      This HTML file is a template.\n      If you open it directly in the browser, you will see an empty page.\n\n      You can add webfonts, meta tags, or analytics to this file.\n      The build step will place the bundled scripts into the \u003cbody\u003e tag.\n\n      To begin the development, run `npm dev` or `yarn start`.\n      To create a production bundle, use `npm run build` or `yarn build`.\n    --\u003e\n  \u003c/body\u003e\n\u003c/html\u003e"
+      "hash": "bac9026575347058678c0bbb965b11bb6b18bd311f87318873294fd4906b5606"
     },
     "arm64": {
       "url": "https://app-qa.q01.io/api/v4/q01sdk/download/?file=winarm\u0026version=1.0.67#/q01sdk.zip",
-      "hash": "\u003c!DOCTYPE html\u003e\n\u003chtml lang=\"en\"\u003e\n  \u003chead\u003e\n    \u003cmeta charset=\"utf-8\" /\u003e\n    \u003clink rel=\"icon\" href=\"/app/favicon.ico\" /\u003e\n    \u003cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /\u003e\n    \u003cmeta name=\"theme-color\" content=\"#000000\" /\u003e\n    \n    \u003ctitle\u003e\n      q01 Platform\n    \u003c/title\u003e\n    \u003cscript type=\"module\" crossorigin src=\"/app/assets/index-f23fe82f.js\"\u003e\u003c/script\u003e\n    \u003clink rel=\"stylesheet\" href=\"/app/assets/style-37efb64a.css\"\u003e\n  \u003c/head\u003e\n  \u003cbody\u003e\n    \u003cnoscript\u003eYou need to enable JavaScript to run this app.\u003c/noscript\u003e\n    \u003cdiv id=\"root\"\u003e\u003c/div\u003e\n    \n    \u003c!--\n      This HTML file is a template.\n      If you open it directly in the browser, you will see an empty page.\n\n      You can add webfonts, meta tags, or analytics to this file.\n      The build step will place the bundled scripts into the \u003cbody\u003e tag.\n\n      To begin the development, run `npm dev` or `yarn start`.\n      To create a production bundle, use `npm run build` or `yarn build`.\n    --\u003e\n  \u003c/body\u003e\n\u003c/html\u003e"
+      "hash": "d02a424fa288884ff24088628c7a820dbb4b5319ddd25ce67856d0618a45842c"
     }
   },
-  "bin": [
-    [
-      "q01sdk.exe",
-      "q01sdk-qa"
-    ]
-  ],
+  "bin": "q01sdk.exe",
   "post_install": [
     "$configDir = \"$env:USERPROFILE\\.q01sdk\"",
     "New-Item -ItemType Directory -Path $configDir -Force | Out-Null",
     "$envFile = \"$configDir\\.env\"",
-    "if (-not (Test-Path $envFile)) { Set-Content -Path $envFile -Value \"Host=https://app-qa.q01.io`r`nEnv=qa`r`nDEVTOOL=devspace\" }"
+    "if (-not (Test-Path $envFile)) { Set-Content -Path $envFile -Value \"Host=https://app-qa.q01.io`r`nEnv=qa\" }"
   ]
 }
