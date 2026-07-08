@@ -1,16 +1,16 @@
 {
-  "version": "1.0.67",
+  "version": "1.0.73",
   "description": "Q01 Platform SDK CLI",
   "homepage": "https://app.q01.io",
   "license": "Proprietary",
   "architecture": {
     "64bit": {
-      "url": "https://app.q01.io/api/v4/q01sdk/download/?file=win\u0026version=1.0.67#/q01sdk.zip",
-      "hash": "bac9026575347058678c0bbb965b11bb6b18bd311f87318873294fd4906b5606"
+      "url": "https://sdk.q01.io/q01sdk/prod/q01sdk-windows-amd64.zip",
+      "hash": "8d2ba80f393ae1d79aa8a44e1f02ea6a44858b5dc0c4e9b7711c6e06caee296a"
     },
     "arm64": {
-      "url": "https://app.q01.io/api/v4/q01sdk/download/?file=winarm\u0026version=1.0.67#/q01sdk.zip",
-      "hash": "d02a424fa288884ff24088628c7a820dbb4b5319ddd25ce67856d0618a45842c"
+      "url": "https://sdk.q01.io/q01sdk/prod/q01sdk-windows-arm64.zip",
+      "hash": "279a8783682f842650975abf2191ce09ac12cd6221b3403a85be0e09b97bad12"
     }
   },
   "bin": "q01sdk.exe",
@@ -18,6 +18,6 @@
     "$configDir = \"$env:USERPROFILE\\.q01sdk\"",
     "New-Item -ItemType Directory -Path $configDir -Force | Out-Null",
     "$envFile = \"$configDir\\.env\"",
-    "if (-not (Test-Path $envFile)) { Set-Content -Path $envFile -Value \"\" }"
+    "if (-not (Test-Path $envFile)) { Set-Content -Path $envFile -Value \"DEVTOOL=devspace\" }"
   ]
 }
