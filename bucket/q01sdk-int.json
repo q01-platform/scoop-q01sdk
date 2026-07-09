@@ -6,11 +6,11 @@
   "architecture": {
     "64bit": {
       "url": "https://sdk.q01.io/q01sdk/int/1.0.75/q01sdk-windows-amd64.zip",
-      "hash": "2024155be9f000c141a24059ac680e7a9df4b702c71f339db3efec5fa00bfa64"
+      "hash": "ecabca535fdc72c2f1f8df5c6327ed7e9cf59d581e1e0bae2b43cced3a0b1fab"
     },
     "arm64": {
       "url": "https://sdk.q01.io/q01sdk/int/1.0.75/q01sdk-windows-arm64.zip",
-      "hash": "c64800d57ba801f0d480252dba6e50f6d325b3428aa9b9ef0bec473ac33fc908"
+      "hash": "27b783b7450fea58ae5fe00bcbc3bb7baf9d6520a7d9ff21e1126c3a5b3c5c4d"
     }
   },
   "bin": [
