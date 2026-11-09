@@ -1,16 +1,16 @@
 {
-  "version": "1.3.0",
+  "version": "1.5.0",
   "description": "Q01 Platform SDK CLI",
   "homepage": "https://app.q01.io",
   "license": "Proprietary",
   "architecture": {
     "64bit": {
-      "url": "https://sdk.q01.io/q01sdk/prod/1.3.0/q01sdk-windows-amd64.zip",
-      "hash": "c80539d9cd08fc78327bf1520c634557bc3effaf480955e540a47b0c87c80bcd"
+      "url": "https://sdk.q01.io/q01sdk/prod/1.5.0/q01sdk-windows-amd64.zip",
+      "hash": "d2d911e92a3f14fdfbe8c29876e18d3cfb2db3281a000d01eb5c6b70a3d28947"
     },
     "arm64": {
-      "url": "https://sdk.q01.io/q01sdk/prod/1.3.0/q01sdk-windows-arm64.zip",
-      "hash": "90ded908e59268dc9fdafcf77ca58cc1a38a8ecb51799a337f46fd7eaa245dbf"
+      "url": "https://sdk.q01.io/q01sdk/prod/1.5.0/q01sdk-windows-arm64.zip",
+      "hash": "91ebfc42bd51721704a38acbc8dcd170f4ec524a5d3e243cb1e8d47f18e48918"
     }
   },
   "bin": "q01sdk.exe",
